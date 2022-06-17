@@ -34,7 +34,7 @@ useEffect( () => {
 
   }
 
-},[excuseChoice]);
+},[excuseChoice, numberOfExcuses]);
 
   const selectExcuse = function(event, userChoice, numberChoice) {
     event.preventDefault(); 
