@@ -1,6 +1,6 @@
 const Header = ()=> {
     return (
-        <h2>Excuses, excuses, excuses...</h2>
+        <h1>Excuses... Excuses...</h1>
     )
 }
 
