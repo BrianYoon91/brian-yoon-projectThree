@@ -13,6 +13,8 @@ const [excuseChoice, setExcuseChoice] = useState('');
 
 const [numberOfExcuses, setNumberOfExcuses] = useState(0);
 
+// API Call using Axios using 2 user choices of category and number of excuses
+
 useEffect( () => {
 
   if (excuseChoice) {
@@ -26,15 +28,18 @@ useEffect( () => {
 
     }).then((apiData) => {
 
-      console.log(apiData.data);
-
       setFinalExcuse(apiData.data);
-
+    }).catch(function (){
+      
+      console.log('Your request could not be retrieved');
     });
 
   }
 
 },[excuseChoice, numberOfExcuses]);
+
+
+// Function to passdown as a prop to get user's choices.
 
   const selectExcuse = function(event, userChoice, numberChoice) {
     event.preventDefault(); 

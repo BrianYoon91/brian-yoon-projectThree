@@ -1,5 +1,4 @@
 const DisplayExcuses = (props) => {
-    console.log(props.excuses.length);
 
     return (
         <section>
@@ -12,15 +11,13 @@ const DisplayExcuses = (props) => {
                         {
                             props.excuses.map((lie)=>{
                                 return (
-                                    <>
+                                    
                                     <div className="excuses" key={lie.id}>
                                         <h3>{lie.excuse}</h3>
                                     </div>
-
-                                    </>
+                                    
                                 )
                             })
-
                         }
 
                         <p> "I solemnly swear I am up to no good 📔" </p>
