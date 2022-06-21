@@ -2,15 +2,21 @@ import { useState } from "react";
 
 const Form = (props) => {
 
+    // State for user selection for category and number
+
     const [userValue, setUserValue] = useState(""); 
 
     const [numberSelected, setNumberSelected] = useState("");
+
+    // change handler for category
 
     const changeHandler = (event) => {
 
         setUserValue(event.target.value);
 
     }
+
+    // change handler for numbers
 
     const changeHandlerNumber = (event) => {
 

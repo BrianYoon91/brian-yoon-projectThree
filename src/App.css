@@ -39,6 +39,12 @@ h3 {
   padding: 5px;
 }
 
+h4 {
+  font-family: 'Amatic SC', sans-serif;
+  color:  #ff5470;
+  font-size: 2rem;
+}
+
 p {
   font-family: 'Amatic SC', sans-serif;
   font-weight: 700;
