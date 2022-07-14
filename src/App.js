@@ -32,7 +32,7 @@ useEffect( () => {
       setFinalExcuse(apiData.data);
     }).catch(function (){
       
-      console.log('Your request could not be retrieved');
+      alert('Sorry but this app only works through 1st to 23rd every month! No excuses for a week!');
     });
 
   }
