@@ -1,7 +1,5 @@
 const Footer = () => {
-    return (
-        <h4>Created by Brian Yoon🍜  at Juno College</h4>
-    )
-}
+  return <h4>Created by Brian Yoon🍜</h4>;
+};
 
-export default Footer; 
+export default Footer;
